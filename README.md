@@ -1,6 +1,6 @@
 # JS Analysis Client
 
-[![npm version](https://img.shields.io/npm/v/js-analysis-client.svg)](https://www.npmjs.com/package/js-analysis-client)
+[![npm version](https://img.shields.io/npm/v/ts-analysis-client.svg)](https://www.npmjs.com/package/ts-analysis-client)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 JavaScript/TypeScript SDK for [Go Analysis Server](../go-analysis-server) - 轻量级、易用的前端数据分析 SDK。
@@ -20,13 +20,13 @@ JavaScript/TypeScript SDK for [Go Analysis Server](../go-analysis-server) - 轻�
 ## 📦 安装
 
 ```bash
-npm install js-analysis-client
+npm install ts-analysis-client
 ```
 
 或使用 CDN:
 
 ```html
-<script src="https://unpkg.com/js-analysis-client/dist/index.umd.js"></script>
+<script src="https://unpkg.com/ts-analysis-client/dist/index.umd.js"></script>
 ```
 
 ## 🚀 快速开始
@@ -36,7 +36,7 @@ npm install js-analysis-client
 #### 方式一：单例模式（推荐）
 
 ```javascript
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 
 // 1. 初始化（应用启动时调用一次）
 Analytics.initialize({
@@ -59,7 +59,7 @@ Analytics.trackAction('user', 'signup', 'email', 1.0);
 #### 方式二：直接使用客户端
 
 ```javascript
-import { AnalyticsClient } from 'js-analysis-client';
+import { AnalyticsClient } from 'ts-analysis-client';
 
 // 创建客户端实例
 const client = new AnalyticsClient({
@@ -77,7 +77,7 @@ await client.trackEvent('app_start', {
 ### Node.js 环境
 
 ```javascript
-const { AnalyticsClient } = require('js-analysis-client');
+const { AnalyticsClient } = require('ts-analysis-client');
 
 const client = new AnalyticsClient({
   serverUrl: 'http://localhost:8080',
@@ -252,7 +252,7 @@ console.log('队列大小:', client.getQueueSize());
 
 ```jsx
 import React, { useEffect } from 'react';
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 
 // 在 App 根组件初始化
 function App() {
@@ -296,7 +296,7 @@ function ProductPage({ productId }) {
 ```javascript
 // main.js
 import { createApp } from 'vue';
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 import App from './App.vue';
 
 // 初始化
@@ -330,7 +330,7 @@ app.mount('#app');
 </template>
 
 <script>
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 
 export default {
   methods: {
@@ -352,7 +352,7 @@ export default {
 'use client';
 
 import { useEffect } from 'react';
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -375,7 +375,7 @@ export default function RootLayout({ children }) {
 
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 
 export default function Page() {
   const pathname = usePathname();
@@ -392,7 +392,7 @@ export default function Page() {
 
 ```javascript
 const express = require('express');
-const { AnalyticsClient } = require('js-analysis-client');
+const { AnalyticsClient } = require('ts-analysis-client');
 
 const app = express();
 const analytics = new AnalyticsClient({

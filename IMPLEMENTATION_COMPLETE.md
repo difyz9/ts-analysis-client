@@ -51,7 +51,7 @@ js_analysis_client/
 ### 1. 单例模式（最简单，推荐）
 
 ```javascript
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 
 // 初始化一次
 Analytics.initialize({
@@ -66,7 +66,7 @@ Analytics.track('event', { data: 'value' });
 ### 2. 直接使用客户端
 
 ```javascript
-import { AnalyticsClient } from 'js-analysis-client';
+import { AnalyticsClient } from 'ts-analysis-client';
 
 const client = new AnalyticsClient({
   serverUrl: 'http://localhost:8080',
@@ -138,7 +138,7 @@ cd /path/to/js_analysis_client
 npm link
 
 cd /path/to/your-project
-npm link js-analysis-client
+npm link ts-analysis-client
 ```
 
 ## 📚 文档

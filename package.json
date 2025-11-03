@@ -1,5 +1,5 @@
 {
-  "name": "js-analysis-client",
+  "name": "@guanafred/ts-analysis-client",
   "version": "1.0.0",
   "description": "JavaScript SDK for Go Analysis Server - Easy event tracking and analytics",
   "main": "dist/index.js",
@@ -8,23 +8,38 @@
   "files": [
     "dist",
     "src",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "jest",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/difyz9/ts-analysis-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/difyz9/ts-analysis-client/issues"
+  },
+  "homepage": "https://github.com/difyz9/ts-analysis-client#readme",
   "keywords": [
     "analytics",
     "tracking",
     "events",
     "sdk",
     "javascript",
-    "typescript"
+    "typescript",
+    "go-analysis",
+    "event-tracking",
+    "data-analytics",
+    "browser",
+    "nodejs"
   ],
-  "author": "Your Name",
+  "author": "guanafred",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",

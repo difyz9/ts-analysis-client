@@ -54,14 +54,14 @@ npm install /path/to/js_analysis_client
 npm link
 
 # 在你的项目目录
-npm link js-analysis-client
+npm link ts-analysis-client
 ```
 
 #### 使用示例
 
 ```javascript
 // 在你的应用入口文件（如 main.js, App.jsx, _app.tsx）
-import Analytics from 'js-analysis-client';
+import Analytics from 'ts-analysis-client';
 
 Analytics.initialize({
   serverUrl: 'http://localhost:8080',
@@ -151,7 +151,7 @@ Analytics.initialize({
 A: SDK 完全支持 TypeScript，包含完整的类型定义：
 
 ```typescript
-import Analytics, { AnalyticsConfig, EventProperties } from 'js-analysis-client';
+import Analytics, { AnalyticsConfig, EventProperties } from 'ts-analysis-client';
 
 const config: AnalyticsConfig = {
   serverUrl: 'http://localhost:8080',

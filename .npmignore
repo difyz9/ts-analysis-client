@@ -1,0 +1,45 @@
+# 源代码文件夹（已包含在 package.json files 中）
+# src/
+
+# 开发相关
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+
+# 测试相关
+coverage/
+.nyc_output/
+*.test.js
+*.test.ts
+
+# 示例文件（可选：如果想包含示例，注释掉这行）
+examples/
+
+# 配置文件
+.eslintrc*
+.prettierrc*
+tsconfig.json
+rollup.config.js
+
+# CI/CD
+.github/
+.travis.yml
+.circleci/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# 文档草稿
+IMPLEMENTATION_COMPLETE.md
+TODO.md
+NOTES.md
